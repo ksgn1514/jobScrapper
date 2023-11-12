@@ -3,5 +3,5 @@ def save_to_file(file_name, jobs):
   file.write("Company, Location, Title, Link\n")
   for job in jobs:
     file.write(
-      f"{job['company']}, {job['location']}, {job['title']}, {job['link']}\n")
+      f"{job['title']}, {job['company']}, {job['location']},  {job['link']}\n")
   file.close()

@@ -4,7 +4,6 @@ from bs4 import BeautifulSoup
 def extract_wwr_jobs(keyword):
     base_url = 'https://weworkremotely.com/remote-jobs/search?=✓&term='
 
-
     response = get(f"{base_url}{keyword}")
     if response.status_code != 200:
         print(f"Error: {response.status_code}")
@@ -23,10 +22,10 @@ def extract_wwr_jobs(keyword):
                 title = anchor.find('span', class_="title")
 
                 job_data = {
+                    'title': title.string,
                     'company': company.string,
                     'location': region.string,
-                    'title': title.string,
-                    'link': link
+                    'link': "https://weworkremotely.com/"+link
                 }
                 results.append(job_data)
 
