@@ -7,9 +7,9 @@
 3. output information in CSV format
 
 ## Tools
-	Python
-	flask
-	BeautifulSoup
-	selenium
-	css: pico
+* Python
+* Flask
+* BeautifulSoup
+* Selenium
+* CSS: pico
 
