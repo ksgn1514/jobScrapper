@@ -1,12 +1,12 @@
-## jobScrapper
+# jobScrapper
  Python flask practice
 
-# feature
+## feature
 1. input search keyword
 2. scrape and display job information from each site with keyword
 3. output information in CSV format
 
-# tools
+## tools
 Python
 flask
 BeautifulSoup
